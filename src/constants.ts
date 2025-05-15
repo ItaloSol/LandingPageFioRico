@@ -65,21 +65,21 @@ export const TESTIMONIALS: TestimonialType[] = [
   {
     id: 1,
     name: "Mariana Silva",
-    image: "https://images.pexels.com/photos/762020/pexels-photo-762020.webp",
+    image: "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg",
     stars: 5,
     text: "Depois de anos sofrendo com química, meu cabelo finalmente está saudável de novo. O kit Fio'rico trouxe vida aos meus fios em apenas 3 semanas!"
   },
   {
     id: 2,
     name: "Camila Alves",
-    image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.webp",
+    image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
     stars: 5,
     text: "Nunca acreditei em produtos para cabelo até experimentar este kit. A diferença é visível desde a primeira aplicação. Meu cabelo está mais forte e brilhante!"
   },
   {
     id: 3,
     name: "Rafael Mendes",
-    image: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.webp",
+    image: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg",
     stars: 4,
     text: "Como homem, nunca dei muita atenção para tratamentos capilares. Comecei a usar depois que minha namorada insistiu e os resultados são impressionantes."
   }
