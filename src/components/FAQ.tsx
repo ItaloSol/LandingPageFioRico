@@ -28,9 +28,11 @@ const FAQ: React.FC = () => {
           {FAQ_ITEMS.map((item, index) => (
             <div
               key={index}
+              role="listitem"
               className="bg-white border-2 border-gray-100 rounded-xl overflow-hidden transition-all duration-200 hover:border-teal-100 focus-within:border-teal-200 focus-within:ring-2 focus-within:ring-teal-100"
             >
               <button
+                id={`faq-question-${index}`}
                 className="w-full flex justify-between items-center p-6 text-left focus:outline-none group"
                 onClick={() => toggleQuestion(index)}
                 aria-expanded={openIndex === index}

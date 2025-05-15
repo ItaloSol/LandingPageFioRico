@@ -1,13 +1,7 @@
 import React from "react";
 import { MASKS } from "../constants";
-import { CheckCircle, Leaf, Heart, ShieldCheck } from "lucide-react";
+import { CheckCircle, Leaf } from "lucide-react";
 
-const iconMap: Record<string, React.ReactNode> = {
-  Shield: <ShieldCheck className="h-6 w-6" />,
-  Leaf: <Leaf className="h-6 w-6" />,
-  CheckCircle: <CheckCircle className="h-6 w-6" />,
-  Heart: <Heart className="h-6 w-6" />,
-};
 
 const Features: React.FC = () => {
   return (
@@ -28,11 +22,11 @@ const Features: React.FC = () => {
               key={mask.id}
               className="bg-white border border-gray-200 rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
             >
-              <div className={`h-48 ${mask.lightColor} overflow-hidden relative`}>
+              <div className={`h-48 ${mask.lightColor} overflow-hidden relative flex items-center justify-center`}>
                 <img
                   src={mask.image}
                   alt={`Máscara de ${mask.name}`}
-                  className="w-full h-full object-cover object-center"
+                  className="object-contain max-h-full max-w-full"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 <div className={`absolute bottom-4 left-4 ${mask.color} text-white font-bold px-4 py-1 rounded-full`}>

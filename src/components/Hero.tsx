@@ -1,5 +1,5 @@
 import React from "react";
-import { ShoppingCart, TruckIcon, Calendar, ShieldCheck } from "lucide-react";
+import { ShoppingCart, TruckIcon, ShieldCheck } from "lucide-react";
 import { INSTALLMENT_PRICE, INSTALLMENTS, PRODUCT_PRICE } from "../constants";
 
 const Hero: React.FC = () => {
@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
           <div className="order-2 md:order-1 space-y-4 md:space-y-6 text-center md:text-left">
             <div>
               <div className="flex items-center justify-center md:justify-start gap-2 mb-2 md:mb-4">
-                <h4 className="text-teal-600 font-medium text-lg md:text-xl">Fio'rico</h4>
+              <img src="/logo.webp" alt="Fio'rico Logo" className="h-8" />
                 <span className="px-3 py-1 bg-teal-100 text-teal-800 text-xs md:text-sm font-medium rounded-full">
                   Desde 2013
                 </span>
@@ -89,7 +89,7 @@ const Hero: React.FC = () => {
             <div className="relative w-full max-w-sm md:max-w-md">
               <div className="absolute inset-0 bg-gradient-to-br from-teal-200 to-rose-200 rounded-full blur-3xl opacity-30 animate-pulse"></div>
               <img
-                src="https://images.pexels.com/photos/3997640/pexels-photo-3997640.jpeg"
+                src="/kit_hero.webp"
                 alt="Kit Cronograma Capilar Fio'rico"
                 className="relative rounded-lg shadow-2xl transform md:scale-110 object-cover h-full w-full"
               />

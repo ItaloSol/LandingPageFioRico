@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Hero from "./components/Hero";
 import Benefits from "./components/Benefits";
 import HowItWorks from "./components/HowItWorks";
@@ -16,7 +16,7 @@ function App() {
     // Find and update favicon
     const link = document.querySelector("link[rel='icon']");
     if (link) {
-      link.setAttribute("href", "/fiorico-icon.svg");
+      link.setAttribute("href", "/ico.ico");
     }
   }, []);
 
@@ -29,16 +29,17 @@ function App() {
     <div className="font-sans">
       {/* Main background with reduced opacity and proper z-index */}
       <div 
-        className="fixed inset-0 bg-[url('https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg')] bg-cover bg-center bg-no-repeat opacity-[0.03] pointer-events-none" 
+        style={{ backgroundImage: "url('/fundo3.webp')" }}
+        className="fixed inset-0 bg-cover bg-center bg-no-repeat opacity-[0.03] pointer-events-none" 
         role="presentation" 
         aria-hidden="true"
       />
       
-      <header className="relative bg-white/95 shadow-sm sticky top-0 z-50 backdrop-blur-sm">
+      <header className="bg-white/95 shadow-sm sticky top-0 z-50 backdrop-blur-sm">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" role="navigation" aria-label="Navegação principal">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
-              <span className="text-2xl font-bold text-teal-600">Fio'rico</span>
+              <img src="/logo.webp" alt="Fio'rico Logo" className="h-8" />
             </div>
             <div className="hidden md:flex space-x-8">
               <a href="#beneficios" className="text-gray-600 hover:text-teal-600 transition-colors">
@@ -69,7 +70,8 @@ function App() {
         
         <div className="relative">
           <div 
-            className="absolute inset-0 bg-[url('https://images.pexels.com/photos/1028599/pexels-photo-1028599.jpeg')] bg-cover bg-center opacity-[0.03] pointer-events-none"
+            style={{ backgroundImage: "url('/fundo3.webp')" }}
+            className="absolute inset-0 bg-cover bg-center opacity-[0.03] pointer-events-none"
             aria-hidden="true"
           />
           <Benefits />
@@ -79,7 +81,8 @@ function App() {
         
         <div className="relative">
           <div 
-            className="absolute inset-0 bg-[url('https://images.pexels.com/photos/1166209/pexels-photo-1166209.jpeg')] bg-cover bg-center opacity-[0.03] pointer-events-none"
+            style={{ backgroundImage: "url('/fundo3.webp')" }}
+            className="absolute inset-0 bg-cover bg-center opacity-[0.03] pointer-events-none"
             aria-hidden="true"
           />
           <Testimonials />
@@ -89,7 +92,8 @@ function App() {
         
         <div className="relative">
           <div 
-            className="absolute inset-0 bg-[url('https://images.pexels.com/photos/1028600/pexels-photo-1028600.jpeg')] bg-cover bg-center opacity-[0.03] pointer-events-none"
+            style={{ backgroundImage: "url('/fundo3.webp')" }}
+            className="absolute inset-0 bg-cover bg-center opacity-[0.03] pointer-events-none"
             aria-hidden="true"
           />
           <FAQ />

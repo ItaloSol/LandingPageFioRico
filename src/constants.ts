@@ -21,7 +21,7 @@ export const MASKS: MaskType[] = [
       "Manteiga de Karité",
       "Proteínas Vegetais"
     ],
-    image: "https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg"
+    image: "/mas_nutri.webp"
   },
   {
     id: 2,
@@ -39,7 +39,7 @@ export const MASKS: MaskType[] = [
       "Aloe Vera",
       "Glicerina Vegetal"
     ],
-    image: "https://images.pexels.com/photos/3738339/pexels-photo-3738339.jpeg"
+    image: "/mas_hidra.webp"
   },
   {
     id: 3,
@@ -57,7 +57,7 @@ export const MASKS: MaskType[] = [
       "Proteínas do Trigo",
       "Ceramidas"
     ],
-    image: "https://images.pexels.com/photos/3993398/pexels-photo-3993398.jpeg"
+    image: "/mas_recon.webp"
   }
 ];
 
@@ -65,21 +65,21 @@ export const TESTIMONIALS: TestimonialType[] = [
   {
     id: 1,
     name: "Mariana Silva",
-    image: "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg",
+    image: "https://images.pexels.com/photos/762020/pexels-photo-762020.webp",
     stars: 5,
     text: "Depois de anos sofrendo com química, meu cabelo finalmente está saudável de novo. O kit Fio'rico trouxe vida aos meus fios em apenas 3 semanas!"
   },
   {
     id: 2,
     name: "Camila Alves",
-    image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
+    image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.webp",
     stars: 5,
     text: "Nunca acreditei em produtos para cabelo até experimentar este kit. A diferença é visível desde a primeira aplicação. Meu cabelo está mais forte e brilhante!"
   },
   {
     id: 3,
     name: "Rafael Mendes",
-    image: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg",
+    image: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.webp",
     stars: 4,
     text: "Como homem, nunca dei muita atenção para tratamentos capilares. Comecei a usar depois que minha namorada insistiu e os resultados são impressionantes."
   }

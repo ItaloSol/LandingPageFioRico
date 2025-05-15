@@ -154,36 +154,10 @@ const Offer: React.FC = () => {
                   </div>
 
                   <img
-                    src="https://images.pexels.com/photos/3992855/pexels-photo-3992855.jpeg"
+                    src="/kit.webp"
                     alt="Kit Cronograma Capilar Fio'rico"
                     className="rounded-xl shadow-2xl transform rotate-3 relative z-0"
                   />
-
-                  <div className="absolute -bottom-4 -right-4 bg-white rounded-xl shadow-lg p-4 z-10">
-                    <div className="flex items-center gap-3">
-                      <div className="h-12 w-12 bg-amber-600 rounded-lg flex items-center justify-center">
-                        <img 
-                          src="https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg"
-                          alt="Nutrição"
-                          className="h-10 w-10 rounded object-cover"
-                        />
-                      </div>
-                      <div className="h-12 w-12 bg-teal-600 rounded-lg flex items-center justify-center">
-                        <img 
-                          src="https://images.pexels.com/photos/3738339/pexels-photo-3738339.jpeg"
-                          alt="Hidratação"
-                          className="h-10 w-10 rounded object-cover"
-                        />
-                      </div>
-                      <div className="h-12 w-12 bg-rose-600 rounded-lg flex items-center justify-center">
-                        <img 
-                          src="https://images.pexels.com/photos/3993398/pexels-photo-3993398.jpeg"
-                          alt="Reconstrução"
-                          className="h-10 w-10 rounded object-cover"
-                        />
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -207,7 +181,7 @@ const Offer: React.FC = () => {
             <div className="bg-white border border-gray-200 rounded-2xl shadow-lg overflow-hidden">
               <div className="h-48 bg-amber-100 relative">
                 <img
-                  src="https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg"
+                  src="/mas_nutri.webp"
                   alt="Máscara de Nutrição"
                   className="w-full h-full object-cover"
                 />
@@ -258,7 +232,7 @@ const Offer: React.FC = () => {
             <div className="bg-white border border-gray-200 rounded-2xl shadow-lg overflow-hidden">
               <div className="h-48 bg-teal-100 relative">
                 <img
-                  src="https://images.pexels.com/photos/3738339/pexels-photo-3738339.jpeg"
+                  src="/mas_hidra.webp"
                   alt="Máscara de Hidratação"
                   className="w-full h-full object-cover"
                 />
@@ -309,7 +283,7 @@ const Offer: React.FC = () => {
             <div className="bg-white border border-gray-200 rounded-2xl shadow-lg overflow-hidden">
               <div className="h-48 bg-rose-100 relative">
                 <img
-                  src="https://images.pexels.com/photos/3993398/pexels-photo-3993398.jpeg"
+                  src="/mas_recon.webp"
                   alt="Máscara de Reconstrução"
                   className="w-full h-full object-cover"
                 />
@@ -360,7 +334,7 @@ const Offer: React.FC = () => {
             <div className="bg-white border border-gray-200 rounded-2xl shadow-lg overflow-hidden">
               <div className="h-48 bg-purple-100 relative">
                 <img
-                  src="https://images.pexels.com/photos/4047184/pexels-photo-4047184.jpeg"
+                  src="/remedio.webp"
                   alt="Pill Food Suplemento"
                   className="w-full h-full object-cover"
                 />

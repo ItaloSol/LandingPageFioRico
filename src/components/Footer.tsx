@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-white text-lg font-bold mb-4">Fio'rico</h3>
+          <img src="/logoB.webp" alt="Fio'rico Logo" className="h-8" />
             <p className="text-gray-400 mb-4">
               Transformando cabelos com produtos profissionais de alta qualidade para todos os tipos de fio.
             </p>
@@ -100,11 +100,7 @@ const Footer: React.FC = () => {
 
         <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Fio'rico. Todos os direitos reservados.
-          </p>
-          <div className="mt-4 md:mt-0 flex flex-col md:flex-row items-center gap-4 md:gap-6">
-            <div className="flex items-center gap-2 text-gray-400 text-sm">
-              Desenvolvido por{" "}
+            © {new Date().getFullYear()} Fio'rico. Todos os direitos reservados.  Desenvolvido por{" "}
               <a 
                 href="https://www.instagram.com/landingpagecraft/"
                 target="_blank"
@@ -113,8 +109,8 @@ const Footer: React.FC = () => {
               >
                 landingpagecraft
               </a>
-            </div>
-          </div>
+          </p>
+         
         </div>
       </div>
     </footer>
