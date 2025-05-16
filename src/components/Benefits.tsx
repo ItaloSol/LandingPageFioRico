@@ -26,7 +26,7 @@ const Features: React.FC = () => {
                 <img
                   src={mask.image}
                   alt={`Máscara de ${mask.name}`}
-                  className="object-contain max-h-full max-w-full"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 <div className={`absolute bottom-4 left-4 ${mask.color} text-white font-bold px-4 py-1 rounded-full`}>
