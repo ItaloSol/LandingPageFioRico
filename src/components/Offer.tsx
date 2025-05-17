@@ -3,6 +3,12 @@ import { ShoppingCart, Package, CheckCircle2, Sparkles, TruckIcon, Calendar, Shi
 import { INSTALLMENT_PRICE, INSTALLMENTS, PRODUCT_PRICE } from "../constants";
 
 const Offer: React.FC = () => {
+  // WhatsApp handler
+  const handleWhatsApp = (productName: string) => {
+    const message = encodeURIComponent(`Olá! Gostaria de comprar o ${productName}!`);
+    window.open(`https://wa.me/5599982388533?text=${message}`, '_blank');
+  };
+
   return (
     <>
       <section className="py-8 md:py-16 bg-gradient-to-br from-teal-50 to-rose-50" id="comprar">
@@ -102,13 +108,14 @@ const Offer: React.FC = () => {
                     </div>
                   </div>
 
-                  <a
-                    href="#"
+                  <button
+                    type="button"
+                    onClick={() => handleWhatsApp("Kit Cronograma Capilar Fio'rico")}
                     className="w-full inline-flex items-center justify-center px-6 py-4 rounded-xl bg-rose-600 text-white font-medium text-lg transition-all duration-300 transform hover:scale-105 hover:bg-rose-700 hover:shadow-lg"
                   >
                     <ShoppingCart className="mr-2 h-5 w-5" />
                     Comprar Agora
-                  </a>
+                  </button>
 
                   <div className="mt-4 text-center text-sm text-gray-500">
                     Aceitamos todos os cartões, Pix e boleto
@@ -221,7 +228,11 @@ const Offer: React.FC = () => {
                 <div className="mt-4">
                   <span className="text-2xl font-bold text-gray-900">R$ 69,90</span>
                 </div>
-                <button className="mt-4 w-full bg-amber-600 text-white py-2 px-4 rounded-xl hover:bg-amber-700 transition-colors flex items-center justify-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => handleWhatsApp("Máscara de Nutrição")}
+                  className="mt-4 w-full bg-amber-600 text-white py-2 px-4 rounded-xl hover:bg-amber-700 transition-colors flex items-center justify-center gap-2"
+                >
                   <ShoppingCart className="h-5 w-5" />
                   Comprar
                 </button>
@@ -272,7 +283,11 @@ const Offer: React.FC = () => {
                 <div className="mt-4">
                   <span className="text-2xl font-bold text-gray-900">R$ 69,90</span>
                 </div>
-                <button className="mt-4 w-full bg-teal-600 text-white py-2 px-4 rounded-xl hover:bg-teal-700 transition-colors flex items-center justify-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => handleWhatsApp("Máscara de Hidratação")}
+                  className="mt-4 w-full bg-teal-600 text-white py-2 px-4 rounded-xl hover:bg-teal-700 transition-colors flex items-center justify-center gap-2"
+                >
                   <ShoppingCart className="h-5 w-5" />
                   Comprar
                 </button>
@@ -323,7 +338,11 @@ const Offer: React.FC = () => {
                 <div className="mt-4">
                   <span className="text-2xl font-bold text-gray-900">R$ 69,90</span>
                 </div>
-                <button className="mt-4 w-full bg-rose-600 text-white py-2 px-4 rounded-xl hover:bg-rose-700 transition-colors flex items-center justify-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => handleWhatsApp("Máscara de Reconstrução")}
+                  className="mt-4 w-full bg-rose-600 text-white py-2 px-4 rounded-xl hover:bg-rose-700 transition-colors flex items-center justify-center gap-2"
+                >
                   <ShoppingCart className="h-5 w-5" />
                   Comprar
                 </button>
@@ -371,7 +390,62 @@ const Offer: React.FC = () => {
                 <div className="mt-4">
                   <span className="text-2xl font-bold text-gray-900">R$ 89,90</span>
                 </div>
-                <button className="mt-4 w-full bg-purple-600 text-white py-2 px-4 rounded-xl hover:bg-purple-700 transition-colors flex items-center justify-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => handleWhatsApp("Pill Food Suplemento")}
+                  className="mt-4 w-full bg-purple-600 text-white py-2 px-4 rounded-xl hover:bg-purple-700 transition-colors flex items-center justify-center gap-2"
+                >
+                  <ShoppingCart className="h-5 w-5" />
+                  Comprar
+                </button>
+              </div>
+            </div>
+
+            {/* Shampoo 3 em 1 */}
+            <div className="bg-white border border-gray-200 rounded-2xl shadow-lg overflow-hidden">
+              <div className="h-48 bg-blue-100 relative">
+                <img
+                  src="/shampoo.jfif"
+                  alt="Shampoo 3 em 1"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 bg-blue-600 text-white font-bold px-4 py-1 rounded-full">
+                  Shampoo 3 em 1
+                </div>
+              </div>
+
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900">Shampoo 3 em 1</h3>
+                <p className="text-gray-600 mt-2">500ml de produto</p>
+                <div className="mt-4 space-y-2">
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-blue-500" />
+                      <span>Lava, hidrata e protege</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-blue-500" />
+                      <span>Fórmula suave para uso diário</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-blue-500" />
+                      <span>Indicado para todos os tipos de cabelo</span>
+                    </li>
+                  </ul>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Sem Parabenos</span>
+                    <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">pH Balanceado</span>
+                  </div>
+                </div>
+                <div className="mt-4">
+                  <span className="text-2xl font-bold text-gray-900">R$ 69,90</span>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => handleWhatsApp("Shampoo 3 em 1")}
+                  className="mt-4 w-full bg-blue-600 text-white py-2 px-4 rounded-xl hover:bg-blue-700 transition-colors flex items-center justify-center gap-2"
+                >
                   <ShoppingCart className="h-5 w-5" />
                   Comprar
                 </button>
